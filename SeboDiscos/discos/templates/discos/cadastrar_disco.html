@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastrar Disco</title>
+</head>
+<body>
+    <h1>Cadastrar Disco</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Cadastrar</button>
+    </form>
+    <a href="{% url 'lista_discos' %}">Voltar para a lista de discos</a>
+</body>
+</html>

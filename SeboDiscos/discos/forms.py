@@ -6,3 +6,7 @@ class DiscoForm(forms.ModelForm):
         model = Disco
         fields = '__all__'
 
+class DiscoForm(forms.ModelForm):
+    class Meta:
+        model = Disco
+        fields = '__all__'

@@ -49,14 +49,55 @@
             margin-top: 10px;
             color: #777;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 5px;
+        }
     </style>
 </head>
 <body>
     <h1>Lista de Discos</h1>
-    <ul>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Ano</th>
+            <th>Gênero</th>
+            <th>Ações</th>
+        </tr>
         {% for disco in discos %}
-            <li><a href="{% url 'detalhes_disco' disco.id %}">{{ disco.nome }}</a></li>
+            <tr>
+                <td>{{ disco.nome }}</td>
+                <td>{{ disco.ano }}</td>
+                <td>{{ disco.genero }}</td>
+                <td>
+                    <a href="{% url 'detalhes_disco' disco.id %}">Visualizar</a>
+                    <a href="{% url 'editar_disco' disco.id %}">Editar</a>
+                    <a href="{% url 'excluir_disco' disco.id %}">Excluir</a>
+                </td>
+            </tr>
         {% endfor %}
-    </ul>
+    </table>
 </body>
 </html>
+
