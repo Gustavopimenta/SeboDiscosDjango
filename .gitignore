@@ -1,0 +1,74 @@
+# Arquivos de compilação e bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ambientes virtuais
+venv/
+env/
+.vscode/
+
+# Arquivos de configuração
+*.pyc
+*.pyo
+__pycache__/
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+*.log
+
+# Arquivos de saída e cache
+*.log
+*.pot
+*.pyc
+*.pyo
+__pycache__/
+*.db
+*.sqlite3
+*.log
+*.gz
+
+# Pacotes e arquivos de dependências
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+
+# Arquivos de teste
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+nosetests.xml
+nosetests.xml.*
+coverage.xml
+coverage.xml.*
+*.cover
+*.log
+.idea/
+.mypy_cache/
+.pytest_cache/
+.cachepickle
+.pytest
+node_modules/
+.DS_Store
+
+# Ambientes
+.env
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Logs e saídas
+logs/
+*.log
